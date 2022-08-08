@@ -1,0 +1,29 @@
+Creating a Farm Stack Project using FastAPI MongoDB and React javascript framework library. 
+
+MongoDB uses Collections as tables each collection consists of documents eachdocument has different fields . 
+
+Basic CRUD application:
+The front end is sending HTTP requests to the server AKA the backend, the backend gets the data from the database, MongoDB sends the data to FastAPI to to the backend server. 
+
+The backend server using Axios will send the responce to the Front end 
+
+fastapi == 0.65.1
+pip install fastapi
+
+uvicorn == 0.14.0
+pip install "uvicorn[standard]"
+
+uvicorn main:app --reload
+
+motor == 2.4.0
+pip install motor
+
+
+pipenv install -r requirements.txt
+
+
+There are 6 different routes to the API:
+"/api/todo" - Gets a single todo
+"/api/todo" - Posts a new todo to the data
+"/api/todo{id}" Gets a single todo by id in the database
+"/api/todo{id}" - Delete todo by id 
